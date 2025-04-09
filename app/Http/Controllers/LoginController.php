@@ -45,10 +45,10 @@ class LoginController extends Controller
         
         // Send OTP via API
         $response = Http::asForm()->post('https://api.textlocal.in/send/', [
-            'username' => env('SMS_GATEWAY_USERNAME'),
-            'hash' => env('SMS_GATEWAY_HASH_API'),
+           'username' => config('services.sms_gateway.username'),
+            'hash' => config('services.sms_gateway.hash'),
             'numbers' => $mobile,
-            'sender' => env('SMS_GATEWAY_SENDER'),
+            'sender' => config('services.sms_gateway.sender'),
             'message' => $message,
         ]);
         
