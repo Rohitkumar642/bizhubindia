@@ -34,5 +34,9 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-
+    'sms_gateway' => [
+        'username' => env('SMS_GATEWAY_USERNAME'),
+        'hash' => env('SMS_GATEWAY_HASH_API'),
+        'sender' => env('SMS_GATEWAY_SENDER'),
+    ],
 ];
