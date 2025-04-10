@@ -45,26 +45,34 @@
 				</div>
 			 </div>
 			 <nav class="main-menu">
-				<div class="collapse navbar-collapse show" id="navbarSupportedContent">
-				   <ul class="navigation">
-					  <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-21">
-						 <a title="Home" href="{{ route('default') }}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Home</a>
-					  </li>
-					  <li id="menu-item-998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-998"><a title="About Us" href="{{ route('about') }}" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">About Us</a></li>
-					  <li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30">
-						 <a title="Services" href="{{ route('services') }}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Services</a>
-					  </li>
-					  <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32 dropdown">
-						 <a title="Pages" href="#" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Pages</a>
-						 <ul role="menu" class="submenu">
-							<li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1142"><a title="Faqs" href="{{ route('faq') }}">Faqs</a></li>
-							<li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1523"><a title="Pricing Plans" href="#">Pricing Plans</a></li>
-						 </ul>
-					  </li>
-					  <li id="menu-item-1399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1399"><a title="Contact Us" href="{{ route('contact') }}" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Contact Us</a></li>
-				   </ul>
-				</div>
-			 </nav>
+                        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                           <ul class="navigation">
+                              <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-21">
+                                 <a title="Home" href="{{route('default')}}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Home</a>
+                              </li>
+                              <li id="menu-item-998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-998"><a title="About Us" href="{{route('about')}}" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">About Us</a></li>
+                              <li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30">
+                                 <a title="Services" href="{{route('services')}}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Services</a>
+                              </li>
+                              <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32 dropdown">
+                                 <a title="Pages" href="#" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Pages</a>
+                                 <ul role="menu" class="submenu">
+                                    <li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1142"><a title="Success Stories" href="#">Success Stories</a></li>
+                                    <li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1523"><a title="Products" href="#">Products</a></li>
+                                 </ul>
+                              </li>
+                              <li id="menu-item-1399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1399"><a title="Contact Us" href="{{ route('contact') }}" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Contact Us</a></li>
+                              <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32 dropdown">
+                                 <a title="Login" href="#" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Login</a>
+                                 <ul role="menu" class="submenu">
+                                    <li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1142"><a title="Login" href="{{ route('login') }}">Login</a></li>
+                                    <li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1523"><a title="SignUp" href="{{ route('signup') }}">Signup</a></li>
+                                    <li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1523"><a title="Admin Login" href="{{ route('admin.login') }}">Admin</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
 		  </div>
 	   </div>
 	</div>
@@ -110,7 +118,7 @@
 		  <div class="tag_text">
 			 <h6 class="te-subtitle">Contact</h6>
 		  </div>
-		  <h2 class="choose-hd">Contact Us</h2>
+		  <h2 class="choose-hd">Get in touch</h2>
 	   </div>
 	</div>
  </div>
@@ -148,7 +156,7 @@
 		  <div class="tag_text">
 			 <h6 class="te-subtitle">Contact</h6>
 		  </div>
-		  <h2 class="choose-hd">Contact Us</h2>
+		  <h2 class="choose-hd">Get in touch</h2>
 		</div>
 		<div class="contact_form te-contact-form">
     <div class="row">
@@ -203,13 +211,14 @@
 			 <div id="nav_menu-2" class="footer_widget footer-widget widget_nav_menu">
 				<h4 class="footer_widget_title">Quick Links</h4>
 				<div class="menu-footer-quick-links-menu-container">
-				   <ul class="footer-menu">
-					  <li><a href="#">About Us</a></li>
-					  <li><a href="#">Blog Standard</a></li>
-					  <li><a href="#">Projects</a></li>
-					  <li><a href="#">Services</a></li>
-					  <li><a href="#">Team</a></li>
-				   </ul>
+				<ul class="footer-menu">
+                              <li><a href="{{ route('about') }}">About Us</a></li>
+                              <li><a href="#">Blog Standard</a></li>
+                              <li><a href="#">Projects</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Team</a></li>
+                              <li><a href="{{ route('faq') }}">FAQs</a></li>
+                           </ul>
 				</div>
 			 </div>
 		  </div>

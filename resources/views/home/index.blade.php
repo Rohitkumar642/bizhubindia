@@ -48,11 +48,18 @@
                         <div class="collapse navbar-collapse show" id="navbarSupportedContent">
                            <ul class="navigation">
                               <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-21">
-                                 <a title="Home" href="{{ route('default') }}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Home</a>
+                                 <a title="Home" href="{{route('default')}}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Home</a>
                               </li>
-                              <li id="menu-item-998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-998"><a title="About Us" href="{{ route('about') }}" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">About Us</a></li>
+                              <li id="menu-item-998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-998"><a title="About Us" href="{{route('about')}}" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">About Us</a></li>
                               <li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30">
-                                 <a title="Services" href="{{ route('services') }}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Services</a>
+                                 <a title="Services" href="{{route('services')}}" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Services</a>
+                              </li>
+                              <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32 dropdown">
+                                 <a title="Pages" href="#" data-toggle="dropdown1" class="hvr-underline-from-left1" aria-expanded="false" data-scroll="" data-options="easing: easeOutQuart">Pages</a>
+                                 <ul role="menu" class="submenu">
+                                    <li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1142"><a title="Success Stories" href="#">Success Stories</a></li>
+                                    <li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1523"><a title="Products" href="#">Products</a></li>
+                                 </ul>
                               </li>
                               <li id="menu-item-1399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1399"><a title="Contact Us" href="{{ route('contact') }}" class="hvr-underline-from-left1" data-scroll="" data-options="easing: easeOutQuart">Contact Us</a></li>
                               <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32 dropdown">
@@ -130,10 +137,9 @@
                               })();
                            </script>
                            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-38" method="post" data-id="38" data-name="">
-                           @csrf
                               <div class="mc4wp-form-fields">
                                  <div class="form-group">
-                                    <input type="email" name="email" placeholder="Enter your email" required="">
+                                    <input type="email" name="EMAIL" placeholder="Enter your email" required="">
                                     <button type="submit" class="btn_style_one">Subscribe</button>
                                  </div>
                               </div>
@@ -158,7 +164,7 @@
                            <div class="income_chart float-bob-y">
                               <div class="title_box">
                                  <h6>Total Income</h6>
-                                 <div class="rate">$ 18532.52</div>
+                                 <div class="rate">&#8377; 1,18,532.52</div>
                               </div>
                               <div class="percentage"><i class="fa fa-solid fa-arrow-trend-up"></i> +11%</div>
                            </div>
@@ -217,29 +223,48 @@
                   <div class="tag_text">
                      <h6 class="te-subtitle">Why Choose us</h6>
                   </div>
-                  <h2 class="choose-hd">We Are The Best In Market</h2>
+                  <h5 class="choose-hd">Why Pick India's Bizhub? We Are the Market Leader</h5>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInLeft animated">
                   <div class="choose-points">
-                     <div class="choose-icon"><i class="fa fa-users"></i></div>
-                     <h4 class="choose-title">Expert Consultant</h4>
-                     <p class="choose-text">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
+                     <div class="choose-icon"><img src="img/verified-suppliers.png"></div>
+                     <!-- <h4 class="choose-title">Expert Consultant</h4> -->
+                     <p class="choose-text">Connect with reliable manufacturers and wholesalers through Verified Vendors & Quality Products.</p>
                      <div class="choose-btn"><a href="#">Read More <i class="fa fa-solid fa-angle-right"></i></a></div>
                   </div>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInUp animated">
                   <div class="choose-points">
-                     <div class="choose-icon"><i class="fa fa-users"></i></div>
-                     <h4 class="choose-title">Expert Consultant</h4>
-                     <p class="choose-text">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
+                     <div class="choose-icon"><img src="img/purchasing.png"></div>
+                     <p class="choose-text">Purchasing in bulk and negotiating prices will help your company get the greatest deals.</p>
                      <div class="choose-btn"><a href="#">Read More <i class="fa fa-solid fa-angle-right"></i></a></div>
                   </div>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInRight animated">
                   <div class="choose-points">
-                     <div class="choose-icon"><i class="fa fa-users"></i></div>
-                     <h4 class="choose-title">Expert Consultant</h4>
-                     <p class="choose-text">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
+                     <div class="choose-icon"><img src="img/flexible-payment.png"></div>
+                     <p class="choose-text">Expand your business financing and credit-based transactions by offering a variety of flexible payment options.</p>
+                     <div class="choose-btn"><a href="#">Read More <i class="fa fa-solid fa-angle-right"></i></a></div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-xs-12 wow fadeInRight animated">
+                  <div class="choose-points">
+                     <div class="choose-icon"><img src="img/automated-inventory.png"></div>
+                     <p class="choose-text">Simplify your business operations with automated inventory and invoicing solutions.</p>
+                     <div class="choose-btn"><a href="#">Read More <i class="fa fa-solid fa-angle-right"></i></a></div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-xs-12 wow fadeInRight animated">
+                  <div class="choose-points">
+                     <div class="choose-icon"><img src="img/secured-transactions.png"></div>
+                     <p class="choose-text">Secure Transactions & Direct Communication: Instantaneous chat and phone calls with verified sellers.</p>
+                     <div class="choose-btn"><a href="#">Read More <i class="fa fa-solid fa-angle-right"></i></a></div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-xs-12 wow fadeInRight animated">
+                  <div class="choose-points">
+                     <div class="choose-icon"><img src="img/smart-search.png"></div>
+                     <p class="choose-text">Discover the greatest products at competitive costs with our price-based listings and smart search.</p>
                      <div class="choose-btn"><a href="#">Read More <i class="fa fa-solid fa-angle-right"></i></a></div>
                   </div>
                </div>
@@ -254,7 +279,7 @@
                   <div class="icon_box_one float-bob-y"><i class="fa fa-chart-bar" aria-hidden="true"></i></div>
                   <div class="icon_box_two float-bob-y"><i class="fa fa-bolt" aria-hidden="true"></i></div>
                   <div class="feture_image">
-                     <img decoding="async" src="https://wp1.themevibrant.com/newwp/financer/wp-content/uploads/2024/05/Rectangle-8785.png" alt="Awesome Image">
+                     <img decoding="async" src="img/keybanr.png" alt="Key Benefits">
                   </div>
                   <div class="chart_image_five float-bob-x">
                      <img decoding="async" src="https://wp1.themevibrant.com/newwp/financer/wp-content/uploads/2024/03/chart_5.png" alt="Awesome Image">
@@ -267,7 +292,7 @@
                         <div class="tag_text">
                            <h6 class="te-subtitle">Features</h6>
                         </div>
-                        <h2 class="te-title financer-size-default">The Specialists in fund administration</h2>
+                        <h2 class="te-title financer-size-default">Key Features & Benefits</h2>
                      </div>
                   </div>
                   <div class="panel-group" id="biz-accordion" role="tablist" aria-multiselectable="true">
@@ -275,13 +300,14 @@
                         <div class="panel-heading" role="tab" id="headingOne">
                            <h4 class="panel-title">
                               <a role="button" data-toggle="collapse" data-parent="#biz-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              1. Improve operational performance
+                              1. Verified Vendors & Secure Transactions
                               </a>
                            </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                            <div class="panel-body">
-                              More than of the public reviews by our users mention amazing and super fast customer support as one of our
+								<p><i class="fa fa-check"></i> Connect with trusted suppliers</p>
+								<p><i class="fa fa-check"></i> Safe, seamless, and protected payments</p>
                            </div>
                         </div>
                      </div>
@@ -289,13 +315,14 @@
                         <div class="panel-heading" role="tab" id="headingTwo">
                            <h4 class="panel-title">
                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#biz-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              2. Focus on core competencies
+                              2. Bulk Buying with Best Prices
                               </a>
                            </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                            <div class="panel-body">
-                              More than of the public reviews by our users mention amazing and super fast customer support as one of our
+								<p><i class="fa fa-check"></i> Wholesale discounts</p>
+								<p><i class="fa fa-check"></i> Cost-effective deals for large orders</p>
                            </div>
                         </div>
                      </div>
@@ -303,16 +330,48 @@
                         <div class="panel-heading" role="tab" id="headingThree">
                            <h4 class="panel-title">
                               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#biz-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              3. Go to market quickly
+                              3. Credit-Based Payments & Business Financing
                               </a>
                            </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                            <div class="panel-body">
-                              More than of the public reviews by our users mention amazing and super fast customer support as one of our
+                              <p><i class="fa fa-check"></i> Check buyer creditworthiness</p>
+							  <p><i class="fa fa-check"></i> Access flexible funding options</p>
                            </div>
                         </div>
                      </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                           <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#biz-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              4. Smart Tools: Invoicing & Inventory
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                           <div class="panel-body">
+                              <p><i class="fa fa-check"></i> Automated billing</p>
+							  <p><i class="fa fa-check"></i> Efficient stock management</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                           <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#biz-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              5. Easy Search & Direct Communication
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                           <div class="panel-body">
+                              <p><i class="fa fa-check"></i> Find products quickly with smart search</p>
+							  <p><i class="fa fa-check"></i> Chat or call suppliers to close deals fast</p>
+                           </div>
+                        </div>
+                     </div>
+					 
                   </div>
                </div>
             </div>
@@ -328,20 +387,31 @@
                   </div>
                   <h2 class="howit-work-hd">How it works</h2>
                </div>
-               <div class="col-md-4 col-xs-12 text-center wow fadeInUp animated">
-                  <div class="process_icon te-icon"><i class="fa fa-user-plus"></i></div>
-                  <h4 class="te-title">Step 1: Create Account</h4>
-                  <p class="te-text">Easily create your Zaplin account with one click and get 100 Million Tokens</p>
+               <div class="col-md-4 col-xs-12 text-center wow fadeInUp animated step">
+                  <div class="process_icon te-icon"><img src="img/register.png"></div>
+                  <h4 class="te-title">Step 1: Register as a Vendor, Buyer, or Seller</h4>
+                  <p class="te-text">Create an account in just a few minutes.</p>
                </div>
-               <div class="col-md-4 col-xs-12 text-center wow fadeInDown animated">
-                  <div class="process_icon te-icon"><i class="fa fa-user-plus"></i></div>
-                  <h4 class="te-title">Step 1: Create Account</h4>
-                  <p class="te-text">Easily create your Zaplin account with one click and get 100 Million Tokens</p>
+               <div class="col-md-4 col-xs-12 text-center wow fadeInDown animated step">
+                  <div class="process_icon te-icon"><img src="img/verified-suppliers.png"></div>
+                  <h4 class="te-title">Step 2: Explore Verified Suppliers & Quality Products</h4>
+                  <p class="te-text">Search, compare & connect with trusted vendors.</p>
                </div>
-               <div class="col-md-4 col-xs-12 text-center wow fadeInUp animated">
-                  <div class="process_icon te-icon"><i class="fa fa-user-plus"></i></div>
-                  <h4 class="te-title">Step 1: Create Account</h4>
-                  <p class="te-text">Easily create your Zaplin account with one click and get 100 Million Tokens</p>
+               <div class="col-md-4 col-xs-12 text-center wow fadeInUp animated step">
+                  <div class="process_icon te-icon"><img src="img/negotiate.png"></div>
+                  <h4 class="te-title">Step 3: Negotiate & Finalize Your Deals</h4>
+                  <p class="te-text">Get the best pricing & bulk discounts.</p>
+               </div>
+               <div class="col-md-2 col-xs-12 text-center wow fadeInDown animated step"></div>
+               <div class="col-md-4 col-xs-12 text-center wow fadeInDown animated step">
+                  <div class="process_icon te-icon"><img src="img/transactions.png"></div>
+                  <h4 class="te-title">Step 4: Use Credit-Based Transactions & Financing</h4>
+                  <p class="te-text">Expand with secure business funding.</p>
+               </div>
+               <div class="col-md-4 col-xs-12 text-center wow fadeInUp animated step">
+                  <div class="process_icon te-icon"><img src="img/order.png"></div>
+                  <h4 class="te-title">Step 5: Seamless Order Processing & Invoicing</h4>
+                  <p class="te-text">Manage transactions with ease.</p>
                </div>
             </div>
          </div>
@@ -354,56 +424,49 @@
                   <div class="tag_text">
                      <h6 class="te-subtitle">Our Services</h6>
                   </div>
-                  <h2 class="choose-hd">Solutions we Provide</h2>
+                  <h2 class="choose-hd">Our Services at Bizhub India</h2>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInUp animated">
                   <div class="solutions_box">
-                     <div class="solutions_icon"><i class="fas fa-home"></i></div>
-                     <h4 class="solutions-title"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Retirement Solutions</a></h4>
-                     <p class="solutions_txt">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
-                     <div class="solutions_btn"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Discover More</a></div>
-                  </div>
-               </div>
-               <div class="col-md-4 col-xs-12 wow fadeInUp animated">
-                  <div class="solutions_box">
-                     <div class="solutions_icon"><i class="fas fa-home"></i></div>
-                     <h4 class="solutions-title"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Retirement Solutions</a></h4>
-                     <p class="solutions_txt">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
-                     <div class="solutions_btn"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Discover More</a></div>
+                     <div class="solutions_icon"><img src="img/trusted-vendor.png"></div>
+                     <h4 class="solutions-title"><a href="#">Trusted Vendors & Quality Products</a></h4>
+                     <p class="solutions_txt">We connect you with a wide network of verified manufacturers and wholesalers</p>
+                     <div class="solutions_btn"><a href="#">Discover More</a></div>
                   </div>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInUp animated">
                   <div class="solutions_box">
-                     <div class="solutions_icon"><i class="fas fa-home"></i></div>
-                     <h4 class="solutions-title"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Retirement Solutions</a></h4>
-                     <p class="solutions_txt">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
-                     <div class="solutions_btn"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Discover More</a></div>
+                     <div class="solutions_icon"><img src="img/better-pricing.png"></div>
+                     <h4 class="solutions-title"><a href="#">Bulk Buying with Better Pricing</a></h4>
+                     <p class="solutions_txt">Save more when you buy more! Bizhub helps you get wholesale discounts and</p>
+                     <div class="solutions_btn"><a href="#">Discover More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-xs-12 wow fadeInUp animated">
+                  <div class="solutions_box">
+                     <div class="solutions_icon"><img src="img/pay-later.png"></div>
+                     <h4 class="solutions-title"><a href="#">Pay Later & Business Financing</a></h4>
+                     <p class="solutions_txt">Don’t let cash flow slow you down. Buy now, pay later with credit-based</p>
+                     <div class="solutions_btn"><a href="#">Discover More</a></div>
                   </div>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInDown animated">
                   <div class="solutions_box">
-                     <div class="solutions_icon"><i class="fas fa-home"></i></div>
-                     <h4 class="solutions-title"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Retirement Solutions</a></h4>
-                     <p class="solutions_txt">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
-                     <div class="solutions_btn"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Discover More</a></div>
+                     <div class="solutions_icon"><img src="img/smart-billing.png"></div>
+                     <h4 class="solutions-title"><a href="#">Smart Billing & Inventory Tools</a></h4>
+                     <p class="solutions_txt">Automate your invoicing and inventory in one place. Save time and reduce errors</p>
+                     <div class="solutions_btn"><a href="#">Discover More</a></div>
                   </div>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInDown animated">
                   <div class="solutions_box">
-                     <div class="solutions_icon"><i class="fas fa-home"></i></div>
-                     <h4 class="solutions-title"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Retirement Solutions</a></h4>
-                     <p class="solutions_txt">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
-                     <div class="solutions_btn"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Discover More</a></div>
+                     <div class="solutions_icon"><img src="img/secure-transactions.png"></div>
+                     <h4 class="solutions-title"><a href="#">Secure Transactions & Easy Communication</a></h4>
+                     <p class="solutions_txt">Stay safe and connected. All payments are secure, and you can chat or call</p>
+                     <div class="solutions_btn"><a href="#">Discover More</a></div>
                   </div>
                </div>
-               <div class="col-md-4 col-xs-12 wow fadeInDown animated">
-                  <div class="solutions_box">
-                     <div class="solutions_icon"><i class="fas fa-home"></i></div>
-                     <h4 class="solutions-title"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Retirement Solutions</a></h4>
-                     <p class="solutions_txt">Duis aute irure dolor in velit one reprehenderit in voluptate more esse cillum dolore neris.</p>
-                     <div class="solutions_btn"><a href="https://wp1.themevibrant.com/newwp/financer/retirement-solutions/">Discover More</a></div>
-                  </div>
-               </div>
+			   
             </div>
          </div>
       </section>
@@ -421,18 +484,17 @@
                   <div class="pricing_block_one">
                      <div class="pricing_table">
                         <div class="table_header">
-                           <h5>Personal Plan</h5>
-                           <p>For bloggers, freelancers &amp; businesses</p>
-                           <div class="rate">$29  <span>/Month</span></div>
+                           <h5>Feature</h5>
                         </div>
                         <div class="table_content">
                            <ul class="feature_list">
-                              <li>Up to 10 Team Members</li>
-                              <li>Unlimited Usage</li>
-                              <li>Unlimited Drive Storage</li>
-                              <li>Concierge Help Center</li>
-                              <li>Smart Brand Personas</li>
-                              <li>Custom AI Brand Models</li>
+                              <li>Verified & Trusted Vendors</li>
+                              <li>Bulk Buying with Best Deals</li>
+                              <li>Credit-Based Transactions & Financing</li>
+                              <li>Automated Invoicing & Inventory Management</li>
+                              <li>Secure & Transparent Transactions</li>
+                              <li>Smart Search & AI-Powered Listings</li>
+                              <li>End-to-End B2B Marketplace Solutions</li>
                            </ul>
                            <a href="#" class="btn_style_two"><span>Select This Package</span></a>
                         </div>
@@ -443,18 +505,17 @@
                   <div class="pricing_block_one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                      <div class="pricing_table">
                         <div class="table_header">
-                           <h5>Business Plan</h5>
-                           <p>For bloggers, freelancers &amp; businesses</p>
-                           <div class="rate">$39  <span>/Month</span></div>
+                           <h5>What we offer</h5>
                         </div>
                         <div class="table_content">
                            <ul class="feature_list">
-                              <li>Up to 10 Team Members</li>
-                              <li>Unlimited Usage</li>
-                              <li>Unlimited Drive Storage</li>
-                              <li>Concierge Help Center</li>
-                              <li>Smart Brand Personas</li>
-                              <li>Custom AI Brand Models</li>
+                              <li>Only pre-verified manufacturers, wholesalers, and suppliers</li>
+                              <li>Negotiated pricing and exclusive discounts on wholesale purchases</li>
+                              <li>"Buy Now, Pay Later" and easy financing options</li>
+                              <li>AI-powered order tracking, invoicing, and stock updates</li>
+                              <li>Encrypted payment gateways and direct vendor communication</li>
+                              <li>Price-based listings and advanced search filters</li>
+                              <li>One platform for buying, selling, financing, and automation</li>
                            </ul>
                            <div class="link_btn">
                               <a href="#" class="btn_style_two"><span>Select This Package</span></a>
@@ -467,18 +528,17 @@
                   <div class="pricing_block_one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                      <div class="pricing_table">
                         <div class="table_header">
-                           <h5>Advance Plan</h5>
-                           <p>For bloggers, freelancers &amp; businesses</p>
-                           <div class="rate">$59  <span>/Month</span></div>
+                           <h5>How it benefits you</h5>
                         </div>
                         <div class="table_content">
                            <ul class="feature_list">
-                              <li>Up to 10 Team Members</li>
-                              <li>Unlimited Usage</li>
-                              <li>Unlimited Drive Storage</li>
-                              <li>Concierge Help Center</li>
-                              <li>Smart Brand Personas</li>
-                              <li>Custom AI Brand Models</li>
+                              <li>No risk of fraud, ensuring reliability and product quality</li>
+                              <li>Maximize cost savings and increase profit margins</li>
+                              <li>Expand your business without immediate financial strain</li>
+                              <li>Saves time, reduces errors, and streamlines operations</li>
+                              <li>100% safe transactions with real-time tracking</li>
+                              <li>Quickly find the best products at the most competitive prices</li>
+                              <li>A seamless experience for vendors, buyers, and sellers</li>
                            </ul>
                            <div class="link_btn">
                               <a href="#" class="btn_style_two"><span>Select This Package</span></a>
@@ -499,19 +559,20 @@
                   <div class="tag_text">
                      <h6 class="te-subtitle">Testimonials</h6>
                   </div>
-                  <h2 class="choose-hd">Solutions we Provide</h2>
+                  <h2 class="choose-hd">Success Stories</h2>
                </div>
                <div class="col-md-4 col-xs-12 wow fadeInUp animated">
                   <div class="news_block_one aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
                      <div class="inner_box">
                         <figure class="image_box"><a href="#"><img loading="lazy" decoding="async" width="410" height="250" src="img/blog_15-410x250.jpg" alt=""></a></figure>
                         <div class="lower_content">
-                           <div class="testimonials-category"><span><a href="#" rel="category tag">Health</a></span></div>
-                           <h3 class="testimonials-hd"><a href="#">Helping people access the support they’re entitled to</a></h3>
-                           <ul class="post-info">
-                              <li><i class="fa fa-calendar"></i>March 13, 2024</li>
-                              <!-- <li><i class="fa fa-user-circle"></i><a href="#">admin</a></li> -->
-                           </ul>
+                           <!-- <div class="testimonials-category"><span><a href="#" rel="category tag">Health</a></span></div> -->
+                           <h3 class="testimonials-hd"><a href="#">Game-Changer for Our Business!</a></h3>
+						   <p>Bizhub India has completely transformed how we source products. The verified vendors and bulk pricing options have helped us save costs while maintaining quality. The platform is easy to use, and the financing options are a huge plus!</p>
+                           <!--<ul class="post-info">
+                               <li><i class="fa fa-calendar"></i>March 13, 2024</li>
+                              <li><i class="fa fa-user-circle"></i><a href="#">admin</a></li> 
+                           </ul>-->
                         </div>
                      </div>
                   </div>
@@ -521,12 +582,8 @@
                      <div class="inner_box">
                         <figure class="image_box"><a href="#"><img loading="lazy" decoding="async" width="410" height="250" src="img/blog_16-410x250.jpg" alt=""></a></figure>
                         <div class="lower_content">
-                           <div class="testimonials-category"><span><a href="#" rel="category tag">Health</a></span></div>
-                           <h3 class="testimonials-hd"><a href="#">Helping people access the support they’re entitled to</a></h3>
-                           <ul class="post-info">
-                              <li><i class="fa fa-calendar"></i>March 13, 2024</li>
-                              <!-- <li><i class="fa fa-user-circle"></i><a href="#">admin</a></li> -->
-                           </ul>
+                           <h3 class="testimonials-hd"><a href="#">Seamless & Secure Transactions!</a></h3>
+						   <p>We struggled with unreliable suppliers until we found Bizhub India. Now, we connect with trusted vendors, negotiate prices, and complete transactions securely. The automated invoicing and inventory tracking have made our operations so much smoother!</p>
                         </div>
                      </div>
                   </div>
@@ -536,12 +593,8 @@
                      <div class="inner_box">
                         <figure class="image_box"><a href="#"><img loading="lazy" decoding="async" width="410" height="250" src="img/blog_14-410x250.jpg" alt=""></a></figure>
                         <div class="lower_content">
-                           <div class="testimonials-category"><span><a href="#" rel="category tag">Health</a></span></div>
-                           <h3 class="testimonials-hd"><a href="#">Helping people access the support they’re entitled to</a></h3>
-                           <ul class="post-info">
-                              <li><i class="fa fa-calendar"></i>March 13, 2024</li>
-                              <!-- <li><i class="fa fa-user-circle"></i><a href="#">admin</a></li> -->
-                           </ul>
+                           <h3 class="testimonials-hd"><a href="#">Best B2B Platform for Growth!</a></h3>
+                           <p>As a seller, Bizhub India has given me access to a wider network of buyers. The direct communication tools and secure payments have made my business more efficient. Highly recommend it to any SME looking for growth!</p>
                         </div>
                      </div>
                   </div>
@@ -563,9 +616,7 @@
                            <p>The future is fast approaching, and the consumer industry is on the precipice of dramatic change</p>
                            <ul class="social-links">
                               <li><a target="_blank" href="#"><i class="fab  fa-facebook-f"></i></a></li>
-                              <li><a target="_blank" href="#"><i class="fab  fa-twitter"></i></a></li>
                               <li><a target="_blank" href="#"><i class="fab  fa-linkedin-in"></i></a></li>
-                              <li><a target="_blank" href="#"><i class="fab  fa-skype"></i></a></li>
                            </ul>
                         </div>
                      </div>
@@ -575,11 +626,12 @@
                         <h4 class="footer_widget_title">Quick Links</h4>
                         <div class="menu-footer-quick-links-menu-container">
                            <ul class="footer-menu">
-                              <li><a href="#">About Us</a></li>
+                              <li><a href="{{ route('about') }}">About Us</a></li>
                               <li><a href="#">Blog Standard</a></li>
                               <li><a href="#">Projects</a></li>
                               <li><a href="#">Services</a></li>
                               <li><a href="#">Team</a></li>
+                              <li><a href="{{ route('faq') }}">FAQs</a></li>
                            </ul>
                         </div>
                      </div>
@@ -621,11 +673,10 @@
                                     }
                                     })();
                                  </script><!-- Mailchimp for WordPress v4.10.2 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                                 <form id="mc4wp-form-3" class="mc4wp-form mc4wp-form-38" method="post" data-id="38" data-name="" >
-                                    @csrf
+                                 <form id="mc4wp-form-3" class="mc4wp-form mc4wp-form-38" method="post" data-id="38" data-name="">
                                     <div class="mc4wp-form-fields">
                                        <div class="form-group">
-                                          <input type="email" name="email" placeholder="Enter your email" required="">
+                                          <input type="email" name="EMAIL" placeholder="Enter your email" required="">
                                           <button type="submit" class="btn_style_one">Subscribe</button>
                                        </div>
                                     </div>
@@ -681,48 +732,9 @@
                      }
                  }
              });
-      </script>
-      <script>
-         $(document).ready(function() {
-    
-            $("#mc4wp-form-3").submit(function (e) {
-               e.preventDefault();
-               let formData = $(this).serialize();
-
-               $.ajax({
-                  type: "POST",
-                  url: "{{ route('subscribed.store') }}",
-                  data: formData,
-                  success: function (response) {
-                     alert(response.message);
-                     $("#mc4wp-form-3")[0].reset();
-                     //$("#subscribeForm").hide();
-                  },
-                  error: function (xhr) {
-                     alert("Subscription failed! Email might already be subscribed.");
-                  }
-               });
-            });
-
-            $("#mc4wp-form-1").submit(function (e) {
-               e.preventDefault();
-               let formData = $(this).serialize();
-
-               $.ajax({
-                  type: "POST",
-                  url: "{{ route('subscribed.store') }}",
-                  data: formData,
-                  success: function (response) {
-                     alert(response.message);
-                     $("#mc4wp-form-1")[0].reset();
-                     //$("#subscribeForm").hide();
-                  },
-                  error: function (xhr) {
-                     alert("Subscription failed! Email might already be subscribed.");
-                  }
-               });
-            });
-         })
+			 new WOW().init();
+			//smoothScroll
+			smoothScroll.init();
       </script>
    </body>
 </html>

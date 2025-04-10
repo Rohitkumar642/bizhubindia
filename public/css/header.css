@@ -260,7 +260,6 @@ nav.main-menu{
     text-align: center;
     z-index:1;
     color: var(--primary-color);
-    font-family: var(--primary-font);
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -278,7 +277,7 @@ nav.main-menu{
 .main-menu .navigation > li > ul,
 .main-menu .navigation > li > .megamenu{
     position: absolute;
-    right: 0;
+    left: 0;
     top: 100%;
     width: 220px;
     margin-top: 5px;
@@ -313,7 +312,6 @@ nav.main-menu{
     line-height: 26px;
     font-weight: 600;
     font-size: 16px;
-    font-family: var(--primary-font);
     color: var(--primary-color);
     text-align: left;
     padding: 14px 0px;
@@ -538,7 +536,6 @@ nav.main-menu{
 }
 .header_top_inner .info_box li a{
     color: #0D0D0D;
-    font-family: var(--secondary-font);
     font-size: 15px;
     line-height: 30px;
     font-style: normal;
@@ -557,7 +554,6 @@ nav.main-menu{
 }
 .header_top_inner .social_box .title{
     color: #0D0D0D;
-    font-family: var(--secondary-font);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
