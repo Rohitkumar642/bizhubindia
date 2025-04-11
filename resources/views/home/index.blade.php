@@ -34,7 +34,7 @@
                <div class="main_header_inner">
                   <div class="main_header_logo">
                      <figure>
-                        <a href="#" title="Bizhub India"><img src="img/bizhub-india-logo.png" alt="logo" style=""></a>                        
+                       
                      </figure>
                   </div>
                   <div class="main_header_menu menu_area">
