@@ -339,9 +339,7 @@
 				   <p>The future is fast approaching, and the consumer industry is on the precipice of dramatic change</p>
 				   <ul class="social-links">
 					  <li><a target="_blank" href="#"><i class="fab  fa-facebook-f"></i></a></li>
-					  <li><a target="_blank" href="#"><i class="fab  fa-twitter"></i></a></li>
 					  <li><a target="_blank" href="#"><i class="fab  fa-linkedin-in"></i></a></li>
-					  <li><a target="_blank" href="#"><i class="fab  fa-skype"></i></a></li>
 				   </ul>
 				</div>
 			 </div>

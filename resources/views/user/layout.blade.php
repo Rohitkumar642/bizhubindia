@@ -100,9 +100,7 @@
         
         <div class="container mt-3">
             <div class="main_header_logo">
-                <figure>
-                    <a href="#" title="Bizhub India"><img src="img/bizhub-india-logo.png" alt="logo" style=""></a>                        
-                </figure>
+                
             </div>
             @yield('content')
         </div>

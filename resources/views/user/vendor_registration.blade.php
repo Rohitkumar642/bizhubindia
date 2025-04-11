@@ -2,18 +2,13 @@
 
 @section('content')
 <div class="containers mt-2">
-    <div class="main_header_logo">
-        <figure>
-            <a href="#" title="Bizhub India"><img src="img/bizhub-india-logo.png" alt="logo" style=""></a>                        
-        </figure>
-    </div>
-    
-    <h4>Vendor Registration Form</h4>
+
+    <h3>Vendor Registration Form</h3>
     <form id="vendorForm" enctype="multipart/form-data" method="post">
         @csrf  {{-- Laravel CSRF Protection --}}
 
         <!-- GST Selection -->
-        <div class="mb-3">
+        <div class="">
             <label class="form-label">Do you have a GST Number?</label>
             <select class="form-control" id="gst_option" name="gst_option">
                 <option value="yes">Yes</option>
@@ -23,20 +18,20 @@
 
         <div id="details">
             <!-- Vendor Name -->
-            <div class="mb-1" id="company_name">
+            <div class="" id="company_name">
                 <label class="form-label" for="vendor_name">Company Name</label>
                 <input type="text" class="form-control" id="vendor_name" name="vendor_name" placeholder="Legal Company Name" required>
             </div>
 
             <!-- Email -->
-            <div class="mb-1">
+            <div class="">
                 <label class="form-label" for="vendor_email">Email</label>
                 <input type="email" class="form-control" id="vendor_email" name="vendor_email" placeholder="Enter Email" required>
             </div>
         </div>
 
         <!-- GST Number -->
-        <div class="mb-1" id="gstField">
+        <div class="" id="gstField">
             <label class="form-label" for="gst_no">GST Number</label>
             <input type="text" class="form-control" id="gst_no" name="gst_no" placeholder="Enter GST Number" required>
         </div>
@@ -45,7 +40,7 @@
         <button type="button" id="fetchBtn">Fetch Vendor Details</button>
 
         <!-- Vendor Details Section -->
-        <div id="vendorDetails" class="mt-4" style="display:none;">
+        <div id="vendorDetails" class="mt-2" style="display:none;">
             <h3>Vendor Information</h3>
             <p><strong>GST Number:</strong> <span id="gst-no"></span></p>
             <p><strong>Legal Name:</strong> <span id="legal-name"></span></p>
@@ -65,65 +60,65 @@
             <button type="button" id="registerBtn">Register</button>
         </div>
 
-        <div id="manualVendorDetails" class="mt-2" style="display:none;">
-            <h3>Enter Your Business Details</h3>
+        <div id="manualVendorDetails" class="mt-1" style="display:none;">
+            <h5>Enter Your Business Details</h5>
 
-            <div class="mb-3">
+            <div class="">
                 <label class="form-label" for="email">Official Email ID</label>
                 <input type="text" class="form-control" id="email" name="email" placeholder="Registered email id" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="legal_name">Legal Name</label>
                 <input type="text" class="form-control" id="legal_name" name="legal_name" placeholder="Registered Company Name" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="duty">Duty</label>
                 <input type="text" class="form-control" id="duty1" name="duty" placeholder="Regular / Protective" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="registration">Registration Date</label>
                 <input type="text" class="form-control" id="registration1" name="registration" placeholder="DD/MM/YYYY" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="company_type">Company Type</label>
                 <input type="text" class="form-control" id="company_type" name="company_type" placeholder="Private / Public / Partnership" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="status">Status</label>
                 <input type="text" class="form-control" id="status1" name="status" placeholder="Active / Inactive" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="trade_name">Trade Name</label>
                 <input type="text" class="form-control" id="trade_name" name="trade_name" placeholder="Registered Trade Name" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="nature">Nature of Business</label>
                 <input type="text" class="form-control" id="nature" name="nature" placeholder="Core Business Activity" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="address">Address</label>
                 <input type="text" class="form-control" id="address1" name="address" placeholder="Location Of Office" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="district">District</label>
                 <input type="text" class="form-control" id="district1" name="district" placeholder="District in which office Located" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="state">State</label>
                 <input type="text" class="form-control" id="state1" name="state" placeholder="State in which Office Located" required>
             </div>
 
-            <div class="mb-3">
+            <div class=" ">
                 <label class="form-label" for="pin_code">Pin Code</label>
                 <input type="text" class="form-control" id="pin_code" name="pin_code" placeholder="Office's Pin Code" required>
             </div>
@@ -134,9 +129,9 @@
         <div id="otpSection" style="display: none;">
         @csrf
         <p>You have recieved OTP to your entered Email ID</p>
-            <h5>OTP</h5>
+            <label for="otp">OTP</label>
             <input type="text" id="otpInput" class="form-control" placeholder="Enter OTP">
-            <button id="verifyOtpBtn">Verify OTP</button>
+            <button type="button" id="verifyOtpBtn">Verify OTP</button>
         </div>
     </form>
 </div>

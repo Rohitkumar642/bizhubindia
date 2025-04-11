@@ -194,22 +194,22 @@
                </div>
                <div class="item">
                   <div class="clients_block_one">
-                     <img src="img/client-2.png">
+                     <img src="img/client-1.png">
                   </div>
                </div>
                <div class="item">
                   <div class="clients_block_one">
-                     <img src="img/client-3.png">
+                     <img src="img/client-1.png">
                   </div>
                </div>
                <div class="item">
                   <div class="clients_block_one">
-                     <img src="img/client-4.png">
+                     <img src="img/client-1.png">
                   </div>
                </div>
                <div class="item">
                   <div class="clients_block_one">
-                     <img src="img/client-5.png">
+                     <img src="img/client-1.png">
                   </div>
                </div>
             </div>
@@ -276,13 +276,13 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6 col-xs-12 wow fadeInLeft animated">
-                  <div class="icon_box_one float-bob-y"><i class="fa fa-chart-bar" aria-hidden="true"></i></div>
+                  <div class="icon_box_one float-bob-y"><i class="fa fa-chart-line" aria-hidden="true"></i></div>
                   <div class="icon_box_two float-bob-y"><i class="fa fa-bolt" aria-hidden="true"></i></div>
                   <div class="feture_image">
                      <img decoding="async" src="img/keybanr.png" alt="Key Benefits">
                   </div>
                   <div class="chart_image_five float-bob-x">
-                     <img decoding="async" src="https://wp1.themevibrant.com/newwp/financer/wp-content/uploads/2024/03/chart_5.png" alt="Awesome Image">
+                     <img decoding="async" src="img/chart_5.png" alt="Key Features">
                   </div>
                </div>
                <div class="col-md-6 col-xs-12 wow fadeInRight animated">
@@ -496,7 +496,6 @@
                               <li>Smart Search & AI-Powered Listings</li>
                               <li>End-to-End B2B Marketplace Solutions</li>
                            </ul>
-                           <a href="#" class="btn_style_two"><span>Select This Package</span></a>
                         </div>
                      </div>
                   </div>

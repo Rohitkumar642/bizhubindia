@@ -118,7 +118,7 @@
 		  <div class="tag_text">
 			 <h6 class="te-subtitle">Contact</h6>
 		  </div>
-		  <h2 class="choose-hd">Get in touch</h2>
+		  <h2 class="choose-hd">Get in Touch</h2>
 	   </div>
 	</div>
  </div>
@@ -131,7 +131,7 @@
 			<div class="contact_block_one mb_30 aos-init aos-animate" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
 				<div class="contact_block_icon te-icon"><i class="fa fa-map-marker"></i></div>
 				<div class="contact_block_title"><h4 class="te-title">Our Location</h4></div>
-				<div class="contact_block_text"><p class="te-text">B-3, 326, Spaze I-Tech Park, Sector 49,<br>Gurgaon, Haryana</p></div>
+				<div class="contact_block_text"><p class="te-text">B-3, 326, Spaze I-Tech Park, Sector 49, Gurgaon, Haryana</p></div>
 			</div>
 		</div>
 		
@@ -156,7 +156,7 @@
 		  <div class="tag_text">
 			 <h6 class="te-subtitle">Contact</h6>
 		  </div>
-		  <h2 class="choose-hd">Get in touch</h2>
+		  <h2 class="choose-hd">Get in Touch</h2>
 		</div>
 		<div class="contact_form te-contact-form">
     <div class="row">
@@ -200,9 +200,7 @@
 				   <p>The future is fast approaching, and the consumer industry is on the precipice of dramatic change</p>
 				   <ul class="social-links">
 					  <li><a target="_blank" href="#"><i class="fab  fa-facebook-f"></i></a></li>
-					  <li><a target="_blank" href="#"><i class="fab  fa-twitter"></i></a></li>
 					  <li><a target="_blank" href="#"><i class="fab  fa-linkedin-in"></i></a></li>
-					  <li><a target="_blank" href="#"><i class="fab  fa-skype"></i></a></li>
 				   </ul>
 				</div>
 			 </div>

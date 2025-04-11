@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('vendors', function (Blueprint $table) {
             $table->id();
-            $table->string('gst_no')->unique();
+            $table->string('gst_no')->unique()->default('NULL');
             $table->string('vendor_email')->unique();
             $table->string('legal_name');
             $table->string('duty')->nullable();

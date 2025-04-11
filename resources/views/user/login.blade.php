@@ -5,85 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login With Mobile</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Inter', sans-serif;
+            background: #f5f0ff;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
+
         .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            background-color: #ffffff;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 360px;
+            transition: all 0.3s ease;
         }
+
+        .container h3 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.17rem;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
         input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
+            width: 100%;
+            padding: 10px 12px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: border-color 0.3s ease;
         }
+
+        input:focus {
+            outline: none;
+            border-color: #2196f3;
+        }
+
         button {
             width: 100%;
-            padding: 10px;
-            background-color:rgb(93, 92, 92);
-            color: white;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: #cd3636;
+            color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
+            font-size: 15px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
+
         button:hover {
-            background-color: #45a049;
+            background-color: rgb(153, 37, 37);
         }
+
         .message {
-            color: green;
             text-align: center;
+            font-size: 14px;
             margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .signup {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .signup a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+
+        #otpSection {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="main_header_logo">
-        <figure>
-            <a href="#" title="Bizhub India"><img src="img/bizhub-india-logo.png" alt="logo" style=""></a>                        
-        </figure>
-    </div>
-
-    <h3>Login With Mobile Number</h3>
+    <h3>Login via Mobile</h3>
 
     <form id="otpForm">
-        <label for="mobileNumber">Enter Mobile Number:</label>
-        <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Your Mobile Number" required>
+        <label for="mobileNumber">Mobile Number</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Enter 10-digit number" required>
         <button type="button" id="sendOtpBtn">Send OTP</button>
 
-        <div id="otpSection" style="display: none;">
-            <label for="otp">Enter OTP:</label>
+        <div id="otpSection">
+            <label for="otp">OTP</label>
             <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
             <button type="button" id="verifyOtpBtn">Verify OTP</button>
         </div>
     </form>
+
     <div id="message" class="message"></div>
 
-    <div id="signupsection">
-        <label for="otp">Don't have account.</label>
-        <button type="button" id="signupBtn">SignUp</button>
+    <div class="signup">
+        Don't have an account? <a href="/signup">Sign Up</a>
     </div>
 </div>
 
 <script>
     $(document).ready(function() {
-
         $('#mobileNumber').on('input', function () {
             var inputVal = $(this).val();
-            var validInput = inputVal.replace(/[^0-9\-\s]/g, ''); 
+            var validInput = inputVal.replace(/[^0-9]/g, '');
             $(this).val(validInput);
         });
 
@@ -107,7 +173,7 @@
                 success: function(response) {
                     if (response.status) {
                         messageDiv.css('color', 'green').text(response.message);
-                        $('#otpSection').show();
+                        $('#otpSection').slideDown();
                     } else {
                         messageDiv.css('color', 'red').text(response.message);
                     }
@@ -140,10 +206,6 @@
                     }
                 }
             });
-        });
-
-        $('#signupBtn').click(function() {
-            window.location.href = '/signup'; 
         });
     });
 </script>
